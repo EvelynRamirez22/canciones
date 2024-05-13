@@ -1,0 +1,13 @@
+<!DOCTYPE html><html><head>
+    <title>Lista De Canciones</title>
+    <link rel="stylesheet" type="text/css"
+    href="{{url_for('static', filename='style2.css')}}">
+    </head><body>
+        <h1>Canciones</h1>
+        <ul>
+            {% for c in canciones%}
+                <li>{{c['name']}}</li>
+            {% endfor %}
+        </ul>
+        
+    </body></html>

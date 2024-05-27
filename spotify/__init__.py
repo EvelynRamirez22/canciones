@@ -10,8 +10,8 @@ with app.app_context():
 def hello():
     return 'Hello, World!'
 
-from . import cantantes
-app.register_blueprint(cantantes.bp)
+from . import cantante
+app.register_blueprint(cantante.bp)
 
 @app.route('/canciones')
 def canciones():

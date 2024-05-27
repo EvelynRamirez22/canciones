@@ -6,7 +6,7 @@
         <h1>Cantantes y Bandas</h1>
         <ul>
             {% for cantante in cantantes%}
-                <li>{{cantante['name']}}</li>
+                <li><a href="{{ url_for('cantante.detalle', id=cantante['ArtistId'])}}">{{cantante['name']}}</a> </li>
             {% endfor %}
         </ul>
         

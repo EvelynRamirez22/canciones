@@ -19,7 +19,7 @@ def lista():
 
     return render_template("cantantes.html", cantantes=lista_de_cantantes) 
 
-@bp.route('/<int:id>')
+@bp.route('<int:id>')
 def detalle(id):
     con = db.get_db()
     consulta1 = """
